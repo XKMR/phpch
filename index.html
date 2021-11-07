@@ -1,0 +1,23 @@
+<!DOCTPYE html>
+<html>
+<head>
+    
+</head>
+<body onload="load()">
+    <form method="post" action="send.php">
+        message content: <input name="cont" />   press ENTER to send
+        <inpu id="sbm" type="submit" value="Send" style="display:block;" /><br />
+        your name: <input name="name" id="nm" />
+        <input id="hr" name="hr" style="display:none;" />
+        <input id="min" name="min" style="display:none;" />
+        <input id="sec" name="sec" style="display:none;" />
+    </form>
+    <form method="post" action="clear.php">
+        <input type="submit" value="Clear" />
+    </form>
+    <button onclick="sb()" id="sv">save name</button><br /><br />
+    <iframe src="save.html" id="frame" style='height:420px;width:1200px;border: solid;'></iframe><br />
+    <script src="main.js"></script><br />
+    <a href="view.php">IMPORTANT DATA</a>
+</body>
+</html>
